@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!-- Facebook Pixel Code --><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '898666452696736'); fbq('track', 'PageView');</script><noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=898666452696736&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KSeF dla Księgowych Małych Firm - Praktyczny przewodnik wdrożenia. 70 stron konkretnej wiedzy, 9 gotowych narzędzi, Quick Start 24h. Od 49 zł.">
+    <meta name="keywords" content="KSeF, księgowość, e-faktury, przewodnik, ebook">
+    <meta name="author" content="Michał Kijak">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="KSeF dla Księgowych Małych Firm">
+    <meta property="og:description" content="Praktyczny przewodnik wdrożenia KSeF. Quick Start 24h, 9 gotowych narzędzi, 15 scenariuszy kryzysowych.">
+    <meta property="og:image" content="https://poradnikksef.com/images/Mockuuups_B-format_book_mockup_with_gradient_cover_on_a_modern_surface.jpeg">
+    <meta property="og:url" content="https://poradnikksef.com">
+    
+    <title>KSeF dla Księgowych Małych Firm - Praktyczny Przewodnik | Michał Kijak</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-left: 4px solid #10B981;
+        }
+        
+        .feature-icon {
+            background: linear-gradient(135deg, #2563EB 0%, #1e40af 100%);
+        }
+        
+        .price-badge {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            z-index: 999;
+        }
+        
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+        
+        @keyframes pulse-grow {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .pulse-animation {
+            animation: pulse-grow 2s ease-in-out infinite;
+        }
+        
+        .countdown-timer {
+            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">
+                    <span class="text-blue-600">KSeF</span> <span class="text-gray-700">Poradnik</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition">Korzyści</a>
+                    <a href="#bonus" class="text-gray-700 hover:text-blue-600 transition">Pakiet</a>
+                    <a href="#opinions" class="text-gray-700 hover:text-blue-600 transition">Opinie</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+                </div>
+                <a href="https://www.naffy.io/enappia/poradnik-ksef-promo" class="btn-primary text-white px-6 py-2 rounded-lg font-semibold buy-button">
+                    Kup teraz
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-gradient text-white pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="countdown-timer rounded-xl px-6 py-4 mb-6 inline-block">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-2xl"></i>
+                            <span class="text-xl font-bold">DO STARTU KSeF:</span>
+                            <div id="countdown-hero" class="text-2xl font-bold"></div>
+                        </div>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Nie Wiesz od Czego Zacząć?
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-4 text-blue-100">
+                        Praktyczny przewodnik dla księgowych małych firm:<br>
+                        od pierwszych testów do stabilnego procesu.
+                    </p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 text-xl mt-1"></i>
+                            <span class="text-lg">70 stron konkretnej wiedzy (zero teorii)</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 text-xl mt-1"></i>
+                            <span class="text-lg">9 gotowych załączników (checklisty, szablony, dzienniki)</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 text-xl mt-1"></i>
+                            <span class="text-lg">Quick Start: wyślij pierwszą fakturę w 24 godziny</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-400 text-xl mt-1"></i>
+                            <span class="text-lg">15 scenariuszy kryzysowych z rozwiązaniami</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-lg mb-8 text-blue-100">
+                        
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <a href="https://www.naffy.io/enappia/poradnik-ksef-promo" class="btn-primary inline-block text-white px-10 py-5 rounded-lg text-xl font-bold pulse-animation buy-button-hero">
+                            <i class="fas fa-download mr-2"></i>
+                            <span class="buy-text">POBIERZ EBOOK ZA 29 ZŁ</span>
+                            <div class="text-sm font-normal buy-subtext">(PROMOCJA -67%!)</div>
+                        </a>
+                        
+                        <div class="space-y-2 text-sm text-blue-100">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Gwarancja zwrotu przez 48 godzin</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Płatność: karta, BLIK, przelew</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Format PDF – działa na wszystkich urządzeniach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <img src="images/Mockuuups_B-format_book_mockup_with_gradient_cover_on_a_modern_surface.jpeg" 
+                         alt="KSeF dla Księgowych Małych Firm - Okładka ebooka" 
+                         class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer - Promo -->
+    <section id="countdown-section" class="countdown-timer text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4">
+                <i class="fas fa-clock text-3xl"></i>
+                <span class="text-2xl font-bold" id="promo-badge">🔥 PROMOCJA -67% KOŃCZY SIĘ ZA:</span>
+                <div id="countdown-promo" class="text-3xl font-bold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer - KSeF Deadline (zawsze widoczny) -->
+    <section class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4">
+                <i class="fas fa-exclamation-triangle text-3xl"></i>
+                <span class="text-2xl font-bold">DO STARTU KSeF ZOSTAŁO:</span>
+                <div id="countdown-ksef" class="text-3xl font-bold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Sample Section -->
+    <section class="py-12 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center border-2 border-blue-100">
+                <div class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold text-sm mb-6">
+                    📖 DARMOWY FRAGMENT
+                </div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nie jesteś pewny? Sprawdź zanim kupisz!
+                </h2>
+                
+                <p class="text-xl text-gray-600 mb-6">
+                    Pobierz darmowy fragment: <strong>Quick Start + Rozdział 1</strong> (20 stron)
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Bez podawania emaila</span>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Bez zobowiązań</span>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Natychmiastowy dostęp</span>
+                    </div>
+                </div>
+                
+                <a href="https://drive.google.com/file/d/1X58ux-Dnf5W9GUxi0RMJjauB3F9bB4hj/view?usp=sharing" 
+                   target="_blank"
+                   class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-xl text-xl font-bold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-download mr-2"></i>
+                    POBIERZ DARMOWY FRAGMENT
+                </a>
+                
+                <p class="text-sm text-gray-500 mt-6">
+                    Przekonaj się sam, czy ten przewodnik jest dla Ciebie.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Czego Nauczysz Się z Tego Ebooka
+                </h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">🎯 SZYBKI START</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Quick Start Guide – wyślij pierwszą fakturę w KSeF w 24 godziny. Bez teorii. Same konkretne kroki.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Krok po kroku przez cały proces</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Checklisty do wydruku i powieszenia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Najpierw działaj, potem zrozum</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">✅ 9 GOTOWYCH NARZĘDZI</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Polityki, checklisty, szablony – wszystko gotowe do użycia. Nie tworzysz od zera.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                            <span>Polityka KSeF (1 strona A4)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                            <span>Checklista jakości (codzienna)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                            <span>Plan awaryjny (gdy coś pójdzie źle)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                            <span>Dziennik KSeF + Rejestr incydentów (Excel)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                            <span>Szablony mailowe + Pre-flight check</span>
+                        </li>
+                    </ul>
+                    <p class="text-blue-600 font-bold mt-4">Wartość: ~15 godzin Twojej pracy</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">🚨 15 SCENARIUSZY KRYZYSOWYCH</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Co robić gdy coś pójdzie źle – konkretne rozwiązania.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-600 mr-2 mt-1"></i>
+                            <span>Faktura wraca z błędem? (7 typowych błędów + fix)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-600 mr-2 mt-1"></i>
+                            <span>Klient nie odbiera faktury? (3 sposoby)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-600 mr-2 mt-1"></i>
+                            <span>Nie działa internet? (plan awaryjny)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-600 mr-2 mt-1"></i>
+                            <span>...i 10 innych sytuacji z gotowymi rozwiązaniami</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">👥 ROLE I PORZĄDEK</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Kto co robi w firmie – jasny podział obowiązków.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Wystawiający, Kontroler, Nadzorca</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Jak nadać uprawnienia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Formularz ZAW-FA krok po kroku</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Współpraca z biurem rachunkowym</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-900 font-bold mt-4">Koniec chaosu "kto to miał zrobić?"</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">📅 PLAN WDROŻENIA</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        3 gotowe plany czasowe – wybierz swój.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                            <span>Plan 30 dni (spokojne wdrożenie)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-orange-600 mr-2 mt-1"></i>
+                            <span>Plan 14 dni (standardowy)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-600 mr-2 mt-1"></i>
+                            <span>Plan 7 dni (express, ale bezpieczny)</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-700 mt-4 text-sm">
+                        Każdy plan: co robisz każdego dnia, checklisty, priorytety.
+                    </p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg">
+                    <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-6">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">🔄 CODZIENNE PROCEDURY</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Jak pracować stabilnie przez cały rok.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Procedury powtarzalne (rano, wieczorem, tydzień, miesiąc)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Kontrola jakości</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                            <span>Audyty miesięczne</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-900 font-bold mt-4">KSeF to nie jednorazowa akcja. To nowy proces.</p>
+                </div>
+
+                <!-- Benefit 7 -->
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                    <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6">
+                        <div class="feature-icon w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">🛡️ ZWERYFIKOWANE FACT-CHECKINGIEM</h3>
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                Wszystkie daty, terminy i procedury sprawdzone.
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                                    <span class="text-gray-600">Źródła: ksef.podatki.gov.pl, gov.pl/kas, Ministerstwo Finansów</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                                    <span class="text-gray-600">Aktualizacja: 21 listopada 2025</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-arrow-right text-green-600 mr-2 mt-1"></i>
+                                    <span class="text-gray-600">Darmowe aktualizacje przez 6 miesięcy dla kupujących</span>
+                                </div>
+                            </div>
+                            <p class="text-blue-600 font-bold mt-4">Nie ryzykujesz błędnych informacji.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="images/Mockuuups_A-format_book_mockup_held_in_hands.jpeg" 
+                         alt="KSeF ebook w rękach" 
+                         class="rounded-lg shadow-xl mb-4 transform hover:scale-105 transition duration-300">
+                    <p class="text-gray-600 font-medium">Wygodny do czytania w każdej sytuacji</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/Mockuuups_A-format_book_mockup_held_by_person_in_white_shirt.jpeg" 
+                         alt="Profesjonalny przewodnik KSeF" 
+                         class="rounded-lg shadow-xl mb-4 transform hover:scale-105 transition duration-300">
+                    <p class="text-gray-600 font-medium">Profesjonalnie przygotowany materiał</p>
+                </div>
+                <div class="text-center">
+                    <img src="images/Mockuuups_C-format_book_mockup_held_by_a_seated_person.jpeg" 
+                         alt="Ebook KSeF do pracy" 
+                         class="rounded-lg shadow-xl mb-4 transform hover:scale-105 transition duration-300">
+                    <p class="text-gray-600 font-medium">Gotowy do natychmiastowego użycia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bundle Offer -->
+    <section id="bonus" class="py-20 bg-gradient-to-br from-orange-500 to-red-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    🎁 Weź Więcej. Zapłać Mniej.
+                </h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="text-center mb-8">
+                        <div class="inline-block bg-orange-100 text-orange-800 px-6 py-2 rounded-full font-bold text-lg mb-4">
+                            OFERTA PAKIETOWA
+                        </div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            📦 PAKIET: KSeF + AI dla Zapracowanych
+                        </h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">
+                                <i class="fas fa-book text-blue-600 mr-2"></i>
+                                "KSeF dla Księgowych Małych Firm"
+                            </h4>
+                            <p class="text-gray-600 mb-3">70 stron praktycznej wiedzy + 9 załączników</p>
+                            <p class="text-2xl font-bold text-gray-900">Wartość: 89 zł</p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-6 rounded-xl">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">
+                                <i class="fas fa-robot text-purple-600 mr-2"></i>
+                                "AI dla Zapracowanych"
+                            </h4>
+                            <p class="text-gray-600 mb-3">200+ promptów + automatyzacja zadań</p>
+                            <p class="text-2xl font-bold text-gray-900">Wartość: 259 zł</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-orange-400 to-red-500 p-8 rounded-xl text-center text-white mb-8">
+                        <p class="text-xl mb-2">Razem warte:</p>
+                        <p class="text-4xl font-bold line-through opacity-75 mb-2">348 zł</p>
+                        <p class="text-2xl mb-2">Płacisz:</p>
+                        <p class="text-6xl font-bold mb-4">99 zł</p>
+                        <p class="text-2xl font-bold bg-white text-orange-600 inline-block px-6 py-3 rounded-full">
+                            OSZCZĘDZASZ: 249 ZŁ
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl mb-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">
+                            🤖 BONUS: "AI dla Zapracowanych"
+                        </h4>
+                        <p class="text-gray-700 mb-4">
+                            Praktyczny przewodnik po narzędziach AI oszczędzających czas:
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>ChatGPT, Claude, Gemini – która AI do czego</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>200+ gotowych promptów do pracy biurowej</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Automatyzacja powtarzalnych zadań</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>AI w księgowości i fakturowaniu</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Oszczędność: 5-10 godzin tygodniowo</span>
+                            </li>
+                        </ul>
+                        <p class="text-blue-600 font-bold mt-4">
+                            Połączenie: KSeF (nowy obowiązek) + AI (oszczędność czasu) = Wdrażasz KSeF SZYBCIEJ dzięki AI
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://www.naffy.io/enappia/pakiet-ksef-ai-dla-zapracowanych" class="btn-secondary inline-block text-white px-12 py-6 rounded-lg text-2xl font-bold">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            KUP PAKIET ZA 99 ZŁ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section id="opinions" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Co Mówią Księgowi Którzy Już Się Przygotowali
+                </h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Przeczytałem Quick Start w piątek wieczorem. W poniedziałek wysłałem pierwszą fakturę testową bez problemów. Dokładnie to co potrzebowałem."
+                    </p>
+                    <p class="font-bold text-gray-900">— Anna K.</p>
+                    <p class="text-gray-600 text-sm">księgowa, Wrocław</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Gotowe szablony załączników oszczędziły mi około 10 godzin pracy. Polityka, checklisty, dziennik – wszystko gotowe. Sam bym tego nie ułożył."
+                    </p>
+                    <p class="font-bold text-gray-900">— Beata S.</p>
+                    <p class="text-gray-600 text-sm">biuro rachunkowe, Kraków</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Bałem się że KSeF to będzie chaos i błędy. Ten poradnik pokazał mi dokładnie co i jak. Teraz jestem spokojny i gotowy."
+                    </p>
+                    <p class="font-bold text-gray-900">— Michał D.</p>
+                    <p class="text-gray-600 text-sm">JDG, Poznań</p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Próbowałem czytać dokumentację z MF. Zrozumiałem 30%. Ten ebook wyjaśnił wszystko po ludzku. Wreszcie wiem od czego zacząć."
+                    </p>
+                    <p class="font-bold text-gray-900">— Tomasz W.</p>
+                    <p class="text-gray-600 text-sm">jednoosobowa firma, Gdańsk</p>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card p-6 rounded-xl shadow-lg lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Scenariusze kryzysowe to złoto. Teraz wiem co robić gdy faktura wróci z błędem albo klient nie odbierze. Już nie boję się Dnia Zero."
+                    </p>
+                    <p class="font-bold text-gray-900">— Kasia M.</p>
+                    <p class="text-gray-600 text-sm">księgowa w małej spółce, Łódź</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Najczęstsze Pytania Przed Zakupem
+                </h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">1. Czy to dla mnie?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4 font-semibold text-green-600">Tak, jeśli:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Prowadzisz księgowość małej firmy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Jesteś księgowym w JDG lub małej spółce</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Pracujesz w biurze rachunkowym obsługującym JDG lub małe spółki</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Chcesz wdrożyć KSeF bez stresu</span>
+                            </li>
+                        </ul>
+                        <p class="mb-4 font-semibold text-red-600">Nie, jeśli:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-600 mr-2 mt-1"></i>
+                                <span>Wystawiasz >500 faktur miesięcznie (potrzebujesz ERP)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-600 mr-2 mt-1"></i>
+                                <span>Pracujesz w korporacji z działem IT</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-600 mr-2 mt-1"></i>
+                                <span>Szukasz porady prawnej lub interpretacji podatkowej</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-600 mr-2 mt-1"></i>
+                                <span>Firma eksportuje (wymaga dodatkowych regulacji)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">2. Czy nie znajdę tego za darmo w internecie?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4">Znajdziesz fragmenty na stronach rządowych. Ale spędzisz 20+ godzin szukając, układając i weryfikując.</p>
+                        <p class="mb-4 font-semibold">Ten ebook to:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Wszystko w jednym miejscu (70 stron)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Gotowe narzędzia (9 załączników)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Praktyczne kroki (zero teorii)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Zweryfikowane fact-checkingiem</span>
+                            </li>
+                        </ul>
+                        <p class="text-lg font-bold text-blue-600">
+                            Pytanie: ile kosztuje 20 godzin Twojej pracy?<br>
+                            20h × 50 zł/h = 1000 zł<br>
+                            Ebook: 49 zł.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">3. Mój program księgowy ma instrukcję. Po co mi ebook?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4">Instrukcja programu pokazuje <strong>JAK KLIKNĄĆ w programie</strong>.</p>
+                        <p class="mb-4">Ten ebook pokazuje <strong>JAK PRACOWAĆ z KSeF</strong>:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Role i podział obowiązków w firmie</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Procedury codzienne i miesięczne</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Co robić w kryzysie</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Współpraca z biurem rachunkowym</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mr-2 mt-1"></i>
+                                <span>Kontrola jakości i audyty</span>
+                            </li>
+                        </ul>
+                        <p class="font-semibold text-blue-600">To się UZUPEŁNIA, nie zastępuje.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">4. Co jeśli przepisy się zmienią?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4 font-semibold text-green-600">Kupujący dostają DARMOWE AKTUALIZACJE przez 6 miesięcy.</p>
+                        <p class="mb-4">Jeśli:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Zmienią się terminy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Pojawią się nowe przepisy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Zaktualizują się procedury</span>
+                            </li>
+                        </ul>
+                        <p class="mb-4">...dostaniesz nową wersję ebooka na email. Gratis.</p>
+                        <p class="text-sm text-gray-600">Potem: aktualizacje płatne, ale w symbolicznej cenie (15-20 zł).</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">5. Co jeśli ebook mi nie pomoże?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <div class="bg-green-50 border-2 border-green-500 rounded-lg p-6 mb-4">
+                            <p class="text-xl font-bold text-green-700 mb-2">GWARANCJA ZWROTU PIENIĘDZY przez 48 godzin.</p>
+                        </div>
+                        <p class="mb-4">Jeśli:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Ebook Ci nie pomógł</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Nie pasuje do Twoich potrzeb</span>
+                            </li>
+                        </ul>
+                        <p class="font-semibold">...napisz email w ciągu 48 godzin od zakupu → zwracam pieniądze. Bez pytań.</p>
+                        <p class="text-gray-600 mt-4">Masz 48 godzin na sprawdzenie, czy poradnik spełnia Twoje oczekiwania.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">6. Czy to jest porada prawna/podatkowa?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4 text-xl font-bold text-red-600">NIE.</p>
+                        <p class="mb-4">To przewodnik TECHNICZNY pokazujący:</p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Jak działa system KSeF</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Jak wysłać fakturę</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                <span>Jakie procedury wdrożyć</span>
+                            </li>
+                        </ul>
+                        <div class="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4">
+                            <p class="font-semibold">W razie wątpliwości prawnych lub podatkowych<br>
+                            → Skonsultuj się z doradcą podatkowym</p>
+                        </div>
+                        <p class="mt-4 text-gray-600">Ebook to NARZĘDZIE, nie zamiennik doradcy.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">7. Kiedy dostanę ebook?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4 text-xl font-bold text-green-600">NATYCHMIAST po płatności.</p>
+                        <ol class="space-y-3 mb-4">
+                            <li class="flex items-start">
+                                <span class="font-bold text-blue-600 mr-2">1.</span>
+                                <span>Klikasz "Kup teraz"</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-blue-600 mr-2">2.</span>
+                                <span>Płacisz (karta, BLIK, przelew)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-blue-600 mr-2">3.</span>
+                                <span>Dostaniesz email z linkiem do pobrania (PDF)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold text-blue-600 mr-2">4.</span>
+                                <span>Pobierasz i czytasz</span>
+                            </li>
+                        </ol>
+                        <p class="font-semibold text-lg mb-4">Cały proces: ~2 minuty.</p>
+                        <div class="text-gray-600">
+                            <p class="mb-1"><strong>Format:</strong> PDF</p>
+                            <p><strong>Działa na:</strong> Windows, Mac, Linux, Android, iOS, Kindle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+                        <span class="text-xl font-bold text-gray-900">8. Czy mogę kupić dla całego biura?</span>
+                        <i class="fas fa-chevron-down text-blue-600 text-xl"></i>
+                    </button>
+                    <div class="faq-answer hidden p-6 pt-0 text-gray-700">
+                        <p class="mb-4 font-semibold text-green-600">TAK – ale potrzebujesz licencji biznesowej.</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
+                                <p class="font-bold text-lg mb-2">LICENCJA POJEDYNCZA (49 zł):</p>
+                                <ul class="space-y-1 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                        <span>Dla 1 osoby</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                        <span>Użytek osobisty</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                        <span>Jedna firma</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-orange-50 border-2 border-orange-300 rounded-lg p-4">
+                                <p class="font-bold text-lg mb-2">LICENCJA BIZNESOWA (197 zł):</p>
+                                <ul class="space-y-1 text-sm">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-600 mr-2 mt-1"></i>
+                                        <span>Dla 5 osób w jednej firmie</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-600 mr-2 mt-1"></i>
+                                        <span>Szkolenia wewnętrzne OK</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-600 mr-2 mt-1"></i>
+                                        <span>Nie dla klientów</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p class="font-semibold">Zainteresowany licencją biznesową?</p>
+                        <p>Napisz: <a href="/cdn-cgi/l/email-protection#bdd0d4ded5dcd1fdcdd2cfdcd9d3d4d6d6ced8db93ded2d0" class="text-blue-600 hover:underline"><span class="__cf_email__" data-cfemail="cda0a4aea5aca18dbda2bfaca9a3a4a6a6bea8abe3aea2a0">[email&#160;protected]</span></a> – wyślę ofertę.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="buy" class="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="countdown-timer rounded-2xl p-8 mb-12">
+                    <p class="text-3xl md:text-4xl font-bold mb-4">
+                        ⏰ DO TWOJEGO DNIA ZERO ZOSTAŁO:
+                    </p>
+                    <div id="countdown-final" class="text-5xl md:text-6xl font-bold"></div>
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Jesteś Gotowy?
+                </h2>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 mb-8">
+                    <p class="text-2xl mb-6">Możesz spędzić kolejne tygodnie:</p>
+                    <div class="space-y-3 text-left max-w-2xl mx-auto mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Szukając informacji na 50 różnych stronach</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Próbując sam ułożyć checklisty</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Stresując się przed Dniem Zero</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Ucząc się na własnych błędach</span>
+                        </div>
+                    </div>
+                    
+                    <p class="text-2xl mb-6">Albo możesz wziąć gotowy przewodnik:</p>
+                    <div class="space-y-3 text-left max-w-2xl mx-auto">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">70 stron konkretnej wiedzy</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">9 gotowych narzędzi do użycia</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Quick Start – pierwsza faktura w 24h</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">15 scenariuszy kryzysowych</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 text-xl mr-3 mt-1"></i>
+                            <span class="text-lg">Spokój i pewność siebie</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <a href="https://www.naffy.io/enappia/poradnik-ksef-promo" class="btn-primary inline-block text-white px-12 py-6 rounded-xl text-2xl font-bold pulse-animation final-cta-button">
+                        <i class="fas fa-download mr-2"></i>
+                        <span class="final-cta-text">POBIERZ EBOOK ZA 29 ZŁ</span><br>
+                        <span class="text-lg font-normal final-cta-subtext">PROMOCJA -67% PRZEZ 24H!</span>
+                        <div class="text-sm font-normal mt-2">(natychmiastowy dostęp po płatności)</div>
+                    </a>
+                    
+                    <div class="text-sm space-y-1">
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Płatność: karta, BLIK, przelew</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Gwarancja zwrotu przez 48 godzin</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Natychmiastowy dostęp (PDF)</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Darmowe aktualizacje przez 6 miesięcy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="my-12">
+                    <div class="w-full h-px bg-white/30 my-8"></div>
+                </div>
+                
+                <div class="bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8">
+                    <p class="text-3xl font-bold mb-4">🎁 ALBO WEŹ PAKIET:</p>
+                    <p class="text-2xl mb-4">KSeF + AI dla Zapracowanych</p>
+                    <div class="text-xl mb-4">
+                        <span class="line-through opacity-75">Razem: 348 zł</span>
+                        <span class="mx-4">→</span>
+                        <span class="font-bold">Płacisz: 99 zł</span>
+                    </div>
+                    <p class="text-2xl font-bold mb-6">OSZCZĘDZASZ: 249 ZŁ</p>
+                    <a href="https://www.naffy.io/enappia/pakiet-ksef-ai-dla-zapracowanych" class="btn-secondary inline-block text-white px-12 py-5 rounded-xl text-2xl font-bold">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        KUP PAKIET ZA 99 ZŁ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">KSeF Poradnik</h3>
+                    <p class="text-gray-400">
+                        Praktyczny przewodnik wdrożenia KSeF dla księgowych małych firm.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontakt</h3>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <a href="/cdn-cgi/l/email-protection#9df0f4fef5fcf1ddedf2effcf9f3f4f6f6eef8fbb3fef2f0" class="hover:text-blue-400 transition">
+                            <span class="__cf_email__" data-cfemail="2944404a4148456959465b484d474042425a4c4f074a4644">[email&#160;protected]</span>
+                        </a>
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-clock mr-2"></i>
+                        Odpowiadam w 24h
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Informacje</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition">Polityka prywatności</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition">Prawo odstąpienia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>© 2025 Michał Kijak. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA (Mobile) -->
+    <div class="sticky-cta md:hidden">
+        <div class="p-4">
+            <a href="https://www.naffy.io/enappia/poradnik-ksef-promo" class="btn-primary block text-center text-white px-6 py-4 rounded-lg font-bold buy-button">
+                <i class="fas fa-download mr-2"></i>
+                <span class="buy-text">KUP EBOOK ZA 29 ZŁ</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // LINKI DO ZAKUPU
+            const PROMO_LINK = 'https://www.naffy.io/enappia/poradnik-ksef-promo';
+            const NORMAL_LINK = 'https://www.naffy.io/enappia/poradnik-ksef-sWS';
+            
+            // Timer 24h per użytkownika
+            function getTimerKey() {
+                return 'ksef_timer_end_' + window.location.hostname;
+            }
+
+            function initTimer() {
+                const timerKey = getTimerKey();
+                let endTime = localStorage.getItem(timerKey);
+                
+                if (!endTime) {
+                    // Nowy użytkownik - ustaw 24h od teraz
+                    endTime = Date.now() + (24 * 60 * 60 * 1000);
+                    localStorage.setItem(timerKey, endTime);
+                }
+                
+                return parseInt(endTime);
+            }
+
+            function isPromoActive() {
+            const endTime = initTimer();
+            const now = Date.now();
+            return now < endTime;
+        }
+
+        function getPurchaseLink() {
+            return isPromoActive() ? PROMO_LINK : NORMAL_LINK;
+        }
+
+        function updateAllLinks() {
+            const link = getPurchaseLink();
+            const promoActive = isPromoActive();
+            
+            // Zaktualizuj wszystkie przyciski CTA
+            document.querySelectorAll('.buy-button, .buy-button-hero, .final-cta-button').forEach(btn => {
+                btn.href = link;
+            });
+            
+            // Zaktualizuj teksty przycisków
+            if (!promoActive) {
+                // Promocja zakończona - zmień teksty
+                document.querySelectorAll('.buy-text').forEach(el => {
+                    el.textContent = 'POBIERZ ZA 89 ZŁ';
+                });
+                
+                document.querySelectorAll('.buy-subtext').forEach(el => {
+                    el.textContent = '(cena regularna)';
+                });
+                
+                document.querySelectorAll('.final-cta-text').forEach(el => {
+                    el.textContent = 'POBIERZ EBOOK ZA 89 ZŁ';
+                });
+                
+                document.querySelectorAll('.final-cta-subtext').forEach(el => {
+                    el.textContent = 'CENA REGULARNA';
+                });
+                
+                // Ukryj całą sekcję promocyjną
+                const countdownSection = document.getElementById('countdown-section');
+                if (countdownSection) {
+                    countdownSection.style.display = 'none';
+                }
+            }
+        }
+
+        function updatePromoCountdown() {
+            const endTime = initTimer();
+            const now = Date.now();
+            const diff = endTime - now;
+            
+            if (diff <= 0) {
+                // Promocja zakończona - ukryj sekcję
+                const countdownSection = document.getElementById('countdown-section');
+                if (countdownSection) {
+                    countdownSection.style.display = 'none';
+                }
+                updateAllLinks();
+                return;
+            }
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            let countdownText = `${hours}h ${minutes}m ${seconds}s`;
+            
+            const promoCountdown = document.getElementById('countdown-promo');
+            if (promoCountdown) {
+                promoCountdown.textContent = countdownText;
+            }
+        }
+
+        function updateKsefCountdown() {
+            const targetDate = new Date('2026-02-01T00:00:00');
+            const now = new Date();
+            const diff = targetDate - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            const countdownText = `${days} DNI ${hours} GODZIN`;
+            
+            // Aktualizuj WSZYSTKIE 3 timery KSeF
+            const timers = ['countdown-hero', 'countdown-ksef', 'countdown-final'];
+            timers.forEach(timerId => {
+                const element = document.getElementById(timerId);
+                if (element) {
+                    element.textContent = countdownText;
+                }
+            });
+        }
+        
+        // Update co sekundę
+        updateAllLinks(); // Inicjalizuj linki na starcie
+        updatePromoCountdown();
+        updateKsefCountdown();
+        setInterval(() => {
+            updatePromoCountdown();
+            updateKsefCountdown();
+            updateAllLinks();
+        }, 1000);
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // Sticky CTA on Mobile
+        const stickyCta = document.querySelector('.sticky-cta');
+        const hero = document.querySelector('#hero');
+        
+        if (stickyCta && hero) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        stickyCta.classList.add('visible');
+                    } else {
+                        stickyCta.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0 });
+            
+            observer.observe(hero);
+        }
+        }); // Koniec DOMContentLoaded
+    </script>
+</body>
+</html>
